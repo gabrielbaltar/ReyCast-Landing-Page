@@ -267,7 +267,7 @@ body {
     }
 
     body {
-        background-image: url('/img/background-image.svg');
+        background-image: url('img/background-image.svg');
         background-position: 0 0px;
         background-size: contain;
     }
