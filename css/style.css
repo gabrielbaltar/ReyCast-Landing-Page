@@ -12,7 +12,10 @@
     --background-color: #05010D;
     --font-color-text-header: #A19AA7;
     --h1-color: #FFFFFF;
+    --paragraph-color: rgba(255, 255, 255, 0.6);
     --black-color: #0D0D0D;
+    --h3-card-text-color: rgba(255, 238, 247, 0.8);
+    --span-color: #59D499;
 }
 
 body {
@@ -169,6 +172,116 @@ body {
     padding-left: 1rem;
 }
 
+.merch-container {
+    max-width: 796px;
+    max-height: 149px;
+    margin: 0 auto;
+    margin-bottom: 14rem;
+    background: linear-gradient(to right, rgba(255, 91, 55, 0.5), rgba(171, 0, 82, 0.5));
+    width: 796px;
+    height: 149px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 27px 0px rgba(173, 40, 40, 0.5);
+}
+
+.card-content {
+    max-width: 788px;
+    height: 141px;
+    background-color: rgba(22, 4, 8, 0.5);
+    border-radius: 12px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2.5rem;
+}
+
+.card-text {
+    color: var(--h3-card-text-color);
+}
+
+.card-text h3 {
+    color: var(--h1-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 27px;
+    padding-bottom: 0.5rem;
+}
+
+.card-text p {
+    color: var(--h3-card-text-color);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.card-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(255, 91, 55, 0.1), rgba(171, 0, 82, 0.1));
+    height: 32px;
+    width: 114px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card-button a{
+    
+    font-size: 0.875rem;
+    background: linear-gradient(to right, rgba(255, 91, 55, 1), rgba(171, 0, 82, 1));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+.install-container {
+    max-width: 1298px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+.text-content h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--h1-color);
+    font-weight: 600;
+    line-height: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text-content span {
+    color: var(--span-color);
+}
+
+.text-content h3 img {
+    height: 35px;
+    margin-left: 0.5rem;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.text-content p {
+    color: var(--paragraph-color);
+    max-width: 800px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+}
+
 @media screen and (max-width: 1450px) {
 
     body {
@@ -194,6 +307,24 @@ body {
         background-size: cover;
         z-index: 1;
     }
+
+    .merch-container {
+        max-width: 408px;
+        margin-bottom: 8rem;
+    }
+
+    .card-content {
+        max-width: 400px;
+        height: 141px;
+        padding: 0px 1rem;
+    }
+
+    .card-text p {
+        width: 221px;
+        font-size: 0.875rem;
+        line-height: 19px;
+    }
+    
 
     .banner-principal {
         max-width: 1204px;
@@ -271,6 +402,34 @@ body {
         background-position: 0 0px;
         background-size: contain;
     }
+
+    .merch-container {
+        max-width: 308px;
+        height: 118px;
+    }
+
+    .card-content {
+        max-width: 300px;
+        height: 110px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .card-text h3 {
+        display: none;
+    }
+
+    .card-text p {
+        width: 221px;
+        font-size: 0.875rem;
+        line-height: 19px;
+    }
+
+    .text-content h3 {
+        font-size: 2rem;
+        line-height: 40px;
+    }
     
 }
 
@@ -290,4 +449,7 @@ body {
         padding-left: 0rem;
     }
 
+    .install-container {
+        min-width: 270px;
+    }
 }
